@@ -1,0 +1,167 @@
+
+/* Define animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply animation to mainbody */
+.mainbody {
+    animation: fadeIn 3s ease;
+}
+
+.image {
+    /* Keep other styles intact */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Add margin at the bottom to create space between the image and the table */
+    /* Center the image horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.container {
+    position: relative;
+    margin-top: 100px;
+    background-color: transparent;
+    padding: 80px; /* Add padding to create space around the content inside the container */
+    text-align: center; /* Center the content horizontally */
+}
+/* Apply animation to combo boxes */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.5); /* Change background color to semi-transparent white */
+    border: 1px solid #ced4da; /* Add border to input fields */
+    animation: bounceIn 0.5s ease;
+    animation: fadeIn 0.5s ease;
+}
+
+main {
+    justify-content: center;
+    background-image: url(./img/bg1.png);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.mainbody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c4c4c4;
+    margin-top: 20px; /* Adjust margin-top to create space between the image and the table */
+}
+
+main .card1 {
+    width: 640px;
+    height: 400px;
+    border-radius: 2%;
+    position: relative;
+    border: 1px solid rgb(96, 126, 151);
+    background-color: rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 700px 50px black;
+}
+
+
+i {
+    font-size: 40px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+i:hover {
+    color: rgb(28, 199, 199);
+    transform: scale(1.5);
+}
+
+a {
+    color: rgb(96, 126, 151);
+    margin: 20px;
+    align-items: center;
+}
+
+/* General Styles */
+/* Custom CSS */
+body {
+    background-color: #f8f9fa; /* Set background color */
+    font-family: Arial, sans-serif; /* Set default font family */
+}
+
+
+
+
+
+.btn-primary {
+    background-color: maroon; /* Set button background color to maroon */
+    color: white; /* Set font color to white */
+}
+
+.btn-primary:hover {
+    background-color: #800000; /* Darker maroon on hover */
+}
+
+/* Override default focus and active states for primary button */
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: maroon !important;
+    /* Add !important to override any other styles */
+}
+
+
+.btn-cancel {
+    margin-right: 10px; /* Add margin to the right of the "Cancel" button */
+}
+
+label ,h3,td{
+     color: #f0f0f0; /* Set label font color to dark white or grayish-white */
+    font-weight: bold; /* Make label text bold */
+}
+
+.btn-submit,
+.btn-reset {
+    margin-left: 10px; /* Add left margin to create space between buttons */
+}
+
+
+        footer {
+            background-color: #910000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+               
+        }
+
+/* Styling links within the footer */
+footer a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Styling links on hover */
+footer a:hover {
+    text-decoration: none; /* Underline on hover */
+}
+
+.form-control.filled {
+    background-color: white; /* Set background color to white when filled */
+    border: 1px solid maroon; /* Change border color */
+}
+     /* Custom CSS to adjust the width of the Description column */
+        .table-container .table th:nth-child(8),
+        .table-container .table td:nth-child(8) {
+            /* You can adjust the width value as needed */
+            min-width: 250px; /* Example width */
+            max-width: 500px; /* Example width */
+            width: auto; /* You can change this to 'width: 100%;' if you want it to occupy the available space */
+
+        }

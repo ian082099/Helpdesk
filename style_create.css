@@ -1,0 +1,216 @@
+/* Specific Component Styles */
+    @keyframes bounceIn {
+        from {
+            transform: scale(0.5);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+    /* Apply animation to combo boxes */
+    .form-control {
+        animation: bounceIn 0.5s ease;
+    }
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+/* Apply animation to combo boxes */
+.form-control {
+	   background-color: rgba(255, 255, 255, 0.5); /* Change background color to semi-transparent white */
+    border: 1px solid #ced4da; /* Add border to input fields */
+    animation: bounceIn 0.5s ease;
+    	animation: fadeIn 0.5s ease;
+}
+main {
+    justify-content: center;
+    background-image: url(./img/bg1.png);
+    height: 100vh; /* Change to fill the entire viewport */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+.card {
+    width: 100%;
+    padding: 20px; /* Adjust padding to fit the content inside */
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(10px);
+}
+
+.mainbody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c4c4c4;
+}
+
+main .card1 {
+    width: 600px;
+    height: 400px;
+    border-radius: 2%;
+    position: relative;
+    border: 1px solid rgb(96, 126, 151);
+    background-color: rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 700px 50px black;
+}
+
+.card,
+.card1 {
+    display: flex;
+     flex-direction: column;
+}
+
+img {
+    left: 50%;
+    top: 10px; /* Adjust the value to move the image down */
+    transform: translate(-50%);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+
+
+i {
+    font-size: 40px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+i:hover {
+    color: rgb(28, 199, 199);
+    transform: scale(1.5);
+}
+
+
+a {
+    color: rgb(96, 126, 151);
+    margin: 20px;
+    align-items: center;
+}
+
+/* General Styles */
+/* Custom CSS */
+body {
+    background-color: #f8f9fa; /* Set background color */
+    font-family: Arial, sans-serif; /* Set default font family */
+}
+
+.container {
+    background-color: transparent; /* Set container background color to transparent */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background-color: rgba(255, 255, 255, 0.5); /* Set input fields background color with opacity */
+    border: 1px solid #ced4da; /* Add border to input fields */
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+background-color: rgba(255, 255, 255, 0.5); /* Set input fields background color with opacity on focus */
+border: 1px solid maroon; /* Change border color to maroon */
+  background-color: white;
+}
+
+.btn-primary {
+    background-color: maroon; /* Set button background color to maroon */
+    color: white; /* Set font color to white */
+    transition: background-color 0.3s ease;
+    
+}
+
+.btn-primary:hover {
+    background-color: #800000; /* Darker maroon on hover */
+
+     /* Apply the scaleAnimation */
+}
+
+/* Override default focus and active states for primary button */
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: maroon !important;
+    /* Add !important to override any other styles */
+}
+
+.btn-reset {
+    background-color: #f8f9fa; /* Set reset button background color to white-gray */
+    color: black; /* Set font color to black */
+    border: 1px solid #ced4da; /* Add border to reset button */
+}
+.btn-cancel {
+    margin-right: 10px; /* Add margin to the right of the "Cancel" button */
+}
+
+label{
+    color: #ccc; /* Set label font color to dark white or grayish-white */
+    font-weight: bold; /* Make label text bold */
+}
+p {
+    color: #ccc; /* Set text color to dark white or grayish-white */
+    font-weight: bold; /* Make text bold */
+    font-size: 12px; /* Set font size to 6 pixels */
+}
+
+
+.btn-submit,
+.btn-reset {
+    margin-left: 10px; /* Add left margin to create space between buttons */
+}
+.card1 {
+    width: 600px;
+    border-radius: 2%;
+    position: relative;
+    border: 1px solid rgb(96, 126, 151);
+    background-color: rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 700px 50px black;
+    padding: 20px; /* Adjust padding to fit content inside */
+    margin: 20px; /* Add margin for spacing */
+}
+
+footer {
+    background-color: #910000; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px; /* Padding around content */
+    text-align: center; /* Align text to center */
+    margin-top: auto; /* Push footer to the bottom of the page */
+    width: 100%; /* Ensure footer spans the entire width */
+}
+
+/* Styling links within the footer */
+footer a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Styling links on hover */
+footer a:hover {
+    text-decoration: none; /* Underline on hover */
+}
+
+.form-control.filled {
+    background-color: white; /* Set background color to white when filled */
+    border: 1px solid maroon; /* Change border color */
+}
+ textarea {
+            resize: none;
+        }
+
